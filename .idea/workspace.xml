@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/game-items/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/layout/layout.blade.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1hrd6qfySAVkg656lNFS2OYvX04" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gamehub/resources/views/game-items" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\2019-2020\gamehub\gamehub\resources\views\game-items" />
+      <recent name="C:\xampp\htdocs\2019-2020\gamehub\gamehub\resources\views\layout" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="" />
+      <created>1600772972917</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600772972917</updated>
+      <workItem from="1600772973966" duration="5792000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="3021" y="525" key="SettingsEditor" timestamp="1600775085551">
+      <screen x="2560" y="360" width="1920" height="1040" />
+    </state>
+    <state x="3021" y="525" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@2560.360.1920.1040" timestamp="1600775085551" />
+    <state x="3176" y="420" width="672" height="677" key="run.anything.popup" timestamp="1600775137104">
+      <screen x="2560" y="360" width="1920" height="1040" />
+    </state>
+    <state x="3176" y="420" width="672" height="677" key="run.anything.popup/0.0.2560.1400/2560.360.1920.1040@2560.360.1920.1040" timestamp="1600775137104" />
+    <state x="3183" y="585" width="672" height="678" key="search.everywhere.popup" timestamp="1600775142078">
+      <screen x="2560" y="360" width="1920" height="1040" />
+    </state>
+    <state x="3183" y="585" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.360.1920.1040@2560.360.1920.1040" timestamp="1600775142078" />
+  </component>
+</project>
