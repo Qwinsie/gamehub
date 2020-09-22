@@ -10,9 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/game-items/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/layout/layout.blade.php" afterDir="false" />
+    <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="Unversioned Files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +51,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600772972917</updated>
-      <workItem from="1600772973966" duration="5792000" />
+      <workItem from="1600772973966" duration="7861000" />
     </task>
+    <task id="LOCAL-00001" summary="Unversioned Files">
+      <created>1600780771676</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600780771676</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -70,11 +77,24 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created index.blade.php view" />
+    <MESSAGE value="Unversioned Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Unversioned Files" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="393" y="406" key="RollbackChangesDialog" timestamp="1600780735465">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="393" y="406" key="RollbackChangesDialog/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1600780735465" />
     <state x="3021" y="525" key="SettingsEditor" timestamp="1600775085551">
       <screen x="2560" y="360" width="1920" height="1040" />
     </state>
     <state x="3021" y="525" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@2560.360.1920.1040" timestamp="1600775085551" />
+    <state x="232" y="436" key="Vcs.Push.Dialog.v2" timestamp="1600780787965">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="232" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1600780787965" />
     <state x="3176" y="420" width="672" height="677" key="run.anything.popup" timestamp="1600775137104">
       <screen x="2560" y="360" width="1920" height="1040" />
     </state>
