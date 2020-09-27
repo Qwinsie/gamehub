@@ -11,6 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="Unversioned Files">
+      <change beforePath="$PROJECT_DIR$/.idea/gamehub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gamehub.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +19,123 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/gamehub/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/gamehub/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/composer" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/webmozart/assert" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1hrd6qfySAVkg656lNFS2OYvX04" />
   <component name="ProjectViewState">
@@ -51,7 +164,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600772972917</updated>
-      <workItem from="1600772973966" duration="7861000" />
+      <workItem from="1600772973966" duration="7917000" />
+      <workItem from="1601206875939" duration="40000" />
+      <workItem from="1601206939267" duration="1041000" />
     </task>
     <task id="LOCAL-00001" summary="Unversioned Files">
       <created>1600780771676</created>
@@ -60,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600780771676</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="workspace.xml change">
+      <created>1600800934291</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1600800934291</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,11 +198,13 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created index.blade.php view" />
     <MESSAGE value="Unversioned Files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unversioned Files" />
+    <MESSAGE value="workspace.xml change" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="393" y="406" key="RollbackChangesDialog" timestamp="1600780735465">
@@ -91,10 +215,10 @@
       <screen x="2560" y="360" width="1920" height="1040" />
     </state>
     <state x="3021" y="525" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@2560.360.1920.1040" timestamp="1600775085551" />
-    <state x="232" y="436" key="Vcs.Push.Dialog.v2" timestamp="1600780787965">
+    <state x="232" y="436" key="Vcs.Push.Dialog.v2" timestamp="1600800937665">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="232" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1600780787965" />
+    <state x="232" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1600800937665" />
     <state x="3176" y="420" width="672" height="677" key="run.anything.popup" timestamp="1600775137104">
       <screen x="2560" y="360" width="1920" height="1040" />
     </state>
