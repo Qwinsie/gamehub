@@ -10,7 +10,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="Unversioned Files" />
+    <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="Unversioned Files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/seeders/DatabaseSeeder.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,15 +147,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/gamehub/resources/views/game-items" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\2019-2020\gamehub" />
+      <recent name="C:\xampp\htdocs\2019-2020\gamehub\gamehub" />
       <recent name="C:\xampp\htdocs\2019-2020\gamehub\gamehub\resources\views\game-items" />
       <recent name="C:\xampp\htdocs\2019-2020\gamehub\gamehub\resources\views\layout" />
     </key>
@@ -163,7 +173,7 @@
       <updated>1600772972917</updated>
       <workItem from="1600772973966" duration="7917000" />
       <workItem from="1601206875939" duration="40000" />
-      <workItem from="1601206939267" duration="1793000" />
+      <workItem from="1601206939267" duration="7763000" />
     </task>
     <task id="LOCAL-00001" summary="Unversioned Files">
       <created>1600780771676</created>
@@ -193,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601211095437</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added .gitignore in the root folder">
+      <created>1601211481418</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601211481418</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,21 +234,27 @@
     <MESSAGE value="workspace.xml change" />
     <MESSAGE value="Added .idea in .gitignore" />
     <MESSAGE value="gamehub.iml &amp; workspace.xml update" />
-    <option name="LAST_COMMIT_MESSAGE" value="gamehub.iml &amp; workspace.xml update" />
+    <MESSAGE value="Added .gitignore in the root folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added .gitignore in the root folder" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="872" y="358" width="922" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601211996686">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="358" width="922" height="692" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1601211996686" />
     <state x="393" y="406" key="RollbackChangesDialog" timestamp="1600780735465">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="393" y="406" key="RollbackChangesDialog/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1600780735465" />
-    <state x="3021" y="525" key="SettingsEditor" timestamp="1600775085551">
-      <screen x="2560" y="360" width="1920" height="1040" />
-    </state>
-    <state x="3021" y="525" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@2560.360.1920.1040" timestamp="1600775085551" />
-    <state x="232" y="436" key="Vcs.Push.Dialog.v2" timestamp="1600800937665">
+    <state x="615" y="222" key="SettingsEditor" timestamp="1601211440168">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="232" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1600800937665" />
+    <state x="615" y="222" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1601211440168" />
+    <state x="3021" y="525" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@2560.360.1920.1040" timestamp="1600775085551" />
+    <state x="232" y="436" key="Vcs.Push.Dialog.v2" timestamp="1601211489523">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="232" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1601211489523" />
     <state x="3176" y="420" width="672" height="677" key="run.anything.popup" timestamp="1600775137104">
       <screen x="2560" y="360" width="1920" height="1040" />
     </state>
