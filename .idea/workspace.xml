@@ -10,10 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="Unversioned Files">
-      <change beforePath="$PROJECT_DIR$/.idea/gamehub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gamehub.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="Unversioned Files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,7 +163,7 @@
       <updated>1600772972917</updated>
       <workItem from="1600772973966" duration="7917000" />
       <workItem from="1601206875939" duration="40000" />
-      <workItem from="1601206939267" duration="1041000" />
+      <workItem from="1601206939267" duration="1793000" />
     </task>
     <task id="LOCAL-00001" summary="Unversioned Files">
       <created>1600780771676</created>
@@ -182,7 +179,21 @@
       <option name="project" value="LOCAL" />
       <updated>1600800934291</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added .idea in .gitignore">
+      <created>1601211074517</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601211074517</updated>
+    </task>
+    <task id="LOCAL-00004" summary="gamehub.iml &amp; workspace.xml update">
+      <created>1601211095437</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601211095437</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +215,9 @@
     <MESSAGE value="Created index.blade.php view" />
     <MESSAGE value="Unversioned Files" />
     <MESSAGE value="workspace.xml change" />
-    <option name="LAST_COMMIT_MESSAGE" value="workspace.xml change" />
+    <MESSAGE value="Added .idea in .gitignore" />
+    <MESSAGE value="gamehub.iml &amp; workspace.xml update" />
+    <option name="LAST_COMMIT_MESSAGE" value="gamehub.iml &amp; workspace.xml update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="393" y="406" key="RollbackChangesDialog" timestamp="1600780735465">
