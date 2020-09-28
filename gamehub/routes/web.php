@@ -18,6 +18,6 @@ Route::get('/', function () {
     return view('game-items.index');
 });
 
-//Route::get('')
+Route::get('/game{id}', 'GameItemController@find')->name('game.find');
 
-Route::get('/about-us', 'GameItemController@show')->name('aboutus');
+Route::get('/about-us', 'AboutUsController@show')->name('aboutus.show');
