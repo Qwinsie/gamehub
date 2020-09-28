@@ -15,8 +15,8 @@ class CreatePreferencesTable extends Migration
     {
         Schema::create('preferences', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->nullable();
-            $table->foreignId('game_id')->nullable();
+            $table->foreignId('user_id')->constrained('roles')->nullable();
+            $table->foreignId('game_id')->constrained('roles')->nullable();
             $table->boolean('preference');
             $table->timestamps();
         });

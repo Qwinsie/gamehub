@@ -17,7 +17,7 @@ class CreateUsersTable extends Migration
             $table->id();
             $table->string('username');
             $table->string('password');
-            $table->foreignId('role_id')->nullable();
+            $table->foreignId('role_id')->constrained('roles')->nullable();
             $table->string('image');
             $table->text('description');
             $table->timestamps();
