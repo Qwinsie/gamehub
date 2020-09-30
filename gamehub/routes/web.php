@@ -18,6 +18,17 @@ Route::get('/', function () {
     return view('game-items.index');
 });
 
-Route::get('/game{id}', 'GameItemController@find')->name('game.find');
+Route::get('about-us', 'AboutUsController@show')->name('about.show');
 
-Route::get('/about-us', 'AboutUsController@show')->name('aboutus.show');
+Route::prefix('games')->group(function(){
+
+    Route::get('', 'GameItemController@show')->name('game');
+
+    Route::name('game.')->middleware('auth')->group(function(){
+        Route::get('create', 'GameItemController@create')   ->name('game.create');
+        Route::post('store', 'GameItemController@store')     ->name('game.store');
+        Route::get('{id}', 'GameItemController@show')       ->name('game.show');
+    });
+});
+
+//Auth::routes();
