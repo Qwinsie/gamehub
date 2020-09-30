@@ -7,22 +7,16 @@
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="Unversioned Files">
-      <change beforePath="$PROJECT_DIR$/.idea/gamehub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gamehub.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/app/Http/Controllers/GameItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/GameItemController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/app/Models/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_131431_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_131431_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_131920_create_games_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_131920_create_games_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_132214_create_preferences_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_132214_create_preferences_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_132332_create_favourites_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_132332_create_favourites_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="Unversioned Files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -312,6 +306,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1056" y="612" width="447" height="265" key="ComposerInitDialogKey/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1601225673460" />
+    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog" timestamp="1601480827852">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="92" y="92" width="2376" height="1216" key="DiffContextDialog/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1601480827852" />
     <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1601222652225">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
