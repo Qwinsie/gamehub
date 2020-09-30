@@ -11,17 +11,17 @@ class GameItemController extends Controller
 {
     public function index()
     {
-        $games = Game::orderBy()
+        $games = Game::orderBy();
 
         return view('game-item.index',compact('games'));
     }
 
     public function find($gameid)
     {
-        $game = User::where('gameid', $gameid)->firstOrFail();
+        $gameItems = User::where('gameid', $gameid)->firstOrFail();
 
         return view('game-items.index', [
-            'game' => $game
+            'gameItems' => $gameItems
     ]);
     }
 }
