@@ -13,14 +13,13 @@ class CreateGamesTable extends Migration
      */
     public function up()
     {
-        Schema::create('games', function (Blueprint $table) {
+        Schema::create('gamehub', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('image');
             $table->integer('year');
             $table->string('company');
-            $table->foreignId('user_id')->constrained('roles')->nullable();
-            $table->dateTime('created');
+            $table->foreignId('user_id')->constrained('users')->nullable();
             $table->timestamps();
         });
     }
@@ -32,6 +31,6 @@ class CreateGamesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('games');
+        Schema::dropIfExists('gamehub');
     }
 }
