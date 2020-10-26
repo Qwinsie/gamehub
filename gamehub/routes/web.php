@@ -22,7 +22,7 @@ Route::get('about-us', 'AboutUsController@show')->name('about.show');
 
 Route::prefix('games')->group(function(){
 
-    Route::get('', 'GameItemController@show')->name('game');
+    Route::get('', 'App\Http\Controllers\GameItemController@show')->name('game');
 
     Route::name('game.')->middleware('auth')->group(function(){
         Route::get('create', 'GameItemController@create')   ->name('game.create');
