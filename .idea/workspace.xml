@@ -25,24 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="Unversioned Files">
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/gamehub/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gamehub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gamehub.iml" afterDir="false" />
+    <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="Added Game">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gamehub/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/app/Http/Controllers/GameItemController.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/GameController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/app/Models/Game.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/app/Models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/app/Models/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gamehub/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_131431_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/migrations/2020_02_27_131431_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_131920_create_games_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/migrations/2020_03_27_131920_create_games_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_132214_create_preferences_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_132214_create_preferences_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_132332_create_favourites_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_132332_create_favourites_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/database/migrations/2020_09_27_132421_create_roles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/migrations/2020_01_27_132421_create_roles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/seeders/DatabaseSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gamehub/resources/views/game-items/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +46,11 @@
     <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Quincy" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -222,7 +214,7 @@
       <workItem from="1603358252692" duration="744000" />
       <workItem from="1603366521398" duration="1808000" />
       <workItem from="1603700955384" duration="22682000" />
-      <workItem from="1603728603002" duration="4910000" />
+      <workItem from="1603728603002" duration="6171000" />
     </task>
     <task id="LOCAL-00001" summary="Unversioned Files">
       <created>1600780771676</created>
@@ -308,7 +300,56 @@
       <option name="project" value="LOCAL" />
       <updated>1603717250775</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=".idea -&gt; gamehub.iml and workspace.xml update">
+      <created>1603737924402</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603737924403</updated>
+    </task>
+    <task id="LOCAL-00014" summary="GameController.php has basic functions: [index, show, create, store, edit, update, validate]">
+      <created>1603738075082</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1603738075082</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Added relations in Game.php, Role.php and User.php Models">
+      <created>1603738376414</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1603738376414</updated>
+    </task>
+    <task id="LOCAL-00016" summary="All Routes are Laravel 8 proof">
+      <created>1603738558272</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603738558272</updated>
+    </task>
+    <task id="LOCAL-00017" summary="index.blade.php has no errors and data from database is shown">
+      <created>1603738607889</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603738607889</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Added a seeder for games table">
+      <created>1603738660804</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1603738660804</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Migrations are now in the right order for successful migration + errors with foreign keys are solved">
+      <created>1603738839799</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1603738839799</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +394,15 @@
     <MESSAGE value="Added Seeder for users migration" />
     <MESSAGE value="workspace.xml update" />
     <MESSAGE value="Changed Routes bug for Laravel 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed Routes bug for Laravel 8" />
+    <MESSAGE value="Added Models Game, Role and User" />
+    <MESSAGE value=".idea -&gt; gamehub.iml and workspace.xml update" />
+    <MESSAGE value="GameController.php has basic functions: [index, show, create, store, edit, update, validate]" />
+    <MESSAGE value="Added relations in Game.php, Role.php and User.php Models" />
+    <MESSAGE value="All Routes are Laravel 8 proof" />
+    <MESSAGE value="index.blade.php has no errors and data from database is shown" />
+    <MESSAGE value="Added a seeder for games table" />
+    <MESSAGE value="Migrations are now in the right order for successful migration + errors with foreign keys are solved" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrations are now in the right order for successful migration + errors with foreign keys are solved" />
   </component>
   <component name="WindowStateProjectService">
     <state x="523" y="211" width="618" height="462" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603366607838">
@@ -365,10 +414,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1603719008517" />
-    <state x="251" y="0" key="CommitChangelistDialog2" timestamp="1603728559311">
+    <state x="251" y="0" width="1177" height="824" key="CommitChangelistDialog2" timestamp="1603738838910">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="251" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603728559311" />
+    <state x="251" y="0" width="1177" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603738838910" />
     <state x="1056" y="612" width="447" height="265" key="ComposerInitDialogKey" timestamp="1601225673460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
