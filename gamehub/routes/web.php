@@ -15,19 +15,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    return view('game-items.index');
+    Route::get('', 'App\Http\Controllers\GameController@show')->name('game');
 });
 
-Route::get('about-us', 'AboutUsController@show')->name('about.show');
+Route::get('about-us', 'AboutUsController@index')->name('about.index');
 
-Route::prefix('games')->group(function(){
+Route::prefix('gamehub')->group(function(){
 
-    Route::get('', 'App\Http\Controllers\GameItemController@show')->name('game');
+    Route::get('', 'App\Http\Controllers\GameController@index')->name('gamehub.index');
 
-    Route::name('game.')->middleware('auth')->group(function(){
-        Route::get('create', 'GameItemController@create')   ->name('game.create');
-        Route::post('store', 'GameItemController@store')     ->name('game.store');
-        Route::get('{id}', 'GameItemController@show')       ->name('game.show');
+    Route::name('game.')->group(function(){
+        Route::get('create', 'App\Http\Controllers\GameController@create')->name('create');
+        Route::post('store', 'App\Http\Controllers\GameController@store')->name('store');
+        Route::get('{id}', 'App\Http\Controllers\GameController@show')->name('show');
     });
 });
 
