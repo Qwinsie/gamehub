@@ -37,6 +37,7 @@
       <excludeFolder url="file://$MODULE_DIR$/gamehub/vendor/justinrainbow/json-schema" />
       <excludeFolder url="file://$MODULE_DIR$/gamehub/vendor/laravel/framework" />
       <excludeFolder url="file://$MODULE_DIR$/gamehub/vendor/laravel/tinker" />
+      <excludeFolder url="file://$MODULE_DIR$/gamehub/vendor/laravel/ui" />
       <excludeFolder url="file://$MODULE_DIR$/gamehub/vendor/league/commonmark" />
       <excludeFolder url="file://$MODULE_DIR$/gamehub/vendor/league/flysystem" />
       <excludeFolder url="file://$MODULE_DIR$/gamehub/vendor/league/mime-type-detection" />

@@ -8,6 +8,11 @@
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:laravel" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
@@ -20,16 +25,42 @@
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:laravel" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:laravel/ui" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="Added Game">
+    <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="Laravel ui and Vue are successfully installed">
+      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/public/css/app.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/public/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/resources/sass/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gamehub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gamehub.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/.env.example" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gamehub/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/resources/views/game-items/index.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +81,11 @@
       <list>
         <option value="Quincy" />
       </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -171,6 +207,7 @@
       <path value="$PROJECT_DIR$/gamehub/vendor/seld/phar-utils" />
       <path value="$PROJECT_DIR$/gamehub/vendor/seld/jsonlint" />
       <path value="$PROJECT_DIR$/gamehub/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/gamehub/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1hrd6qfySAVkg656lNFS2OYvX04" />
@@ -214,7 +251,9 @@
       <workItem from="1603358252692" duration="744000" />
       <workItem from="1603366521398" duration="1808000" />
       <workItem from="1603700955384" duration="22682000" />
-      <workItem from="1603728603002" duration="6171000" />
+      <workItem from="1603728603002" duration="6413000" />
+      <workItem from="1603882481304" duration="687000" />
+      <workItem from="1603898608729" duration="13923000" />
     </task>
     <task id="LOCAL-00001" summary="Unversioned Files">
       <created>1600780771676</created>
@@ -349,7 +388,63 @@
       <option name="project" value="LOCAL" />
       <updated>1603738839799</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added Models for Favourite, Game and Preference">
+      <created>1603738886579</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1603738886579</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Added Detail and Create views">
+      <created>1603738914691</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1603738914691</updated>
+    </task>
+    <task id="LOCAL-00022" summary="workspace.xml .env.example and composer.lock updated">
+      <created>1603738949408</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1603738949408</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Route to Controller change">
+      <created>1603900590128</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1603900590128</updated>
+    </task>
+    <task id="LOCAL-00024" summary="User migration now works with laravel auth (description, role_id and image are commented out)">
+      <created>1603921996768</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1603921996768</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Error of db table name is fixed">
+      <created>1603922053027</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1603922053027</updated>
+    </task>
+    <task id="LOCAL-00026" summary="User Model now has laravel auth">
+      <created>1603922124005</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1603922124005</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Routes now have laravel auth">
+      <created>1603922163723</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1603922163723</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -366,7 +461,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="laravel/ui" />
                       </list>
                     </value>
                   </entry>
@@ -380,13 +475,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created index.blade.php view" />
-    <MESSAGE value="Unversioned Files" />
-    <MESSAGE value="workspace.xml change" />
-    <MESSAGE value="Added .idea in .gitignore" />
-    <MESSAGE value="gamehub.iml &amp; workspace.xml update" />
-    <MESSAGE value="Added .gitignore in the root folder" />
-    <MESSAGE value="Added user, games, pref, fav and roles migrations" />
     <MESSAGE value="Added Faker library through composer." />
     <MESSAGE value="Deleted default user migration" />
     <MESSAGE value="Added Seeder and Factory" />
@@ -402,7 +490,17 @@
     <MESSAGE value="index.blade.php has no errors and data from database is shown" />
     <MESSAGE value="Added a seeder for games table" />
     <MESSAGE value="Migrations are now in the right order for successful migration + errors with foreign keys are solved" />
-    <option name="LAST_COMMIT_MESSAGE" value="Migrations are now in the right order for successful migration + errors with foreign keys are solved" />
+    <MESSAGE value="Added Models for Favourite, Game and Preference" />
+    <MESSAGE value="Added Detail and Create views" />
+    <MESSAGE value="workspace.xml .env.example and composer.lock updated" />
+    <MESSAGE value="Route to Controller change" />
+    <MESSAGE value="User migration now works with laravel auth (description, role_id and image are commented out)" />
+    <MESSAGE value="Error of db table name is fixed" />
+    <MESSAGE value="Migration password reset added" />
+    <MESSAGE value="User Model now has laravel auth" />
+    <MESSAGE value="Routes now have laravel auth" />
+    <MESSAGE value="Laravel ui and Vue are successfully installed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laravel ui and Vue are successfully installed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="523" y="211" width="618" height="462" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603366607838">
@@ -414,10 +512,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="410" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1603719008517" />
-    <state x="251" y="0" width="1177" height="824" key="CommitChangelistDialog2" timestamp="1603738838910">
+    <state x="251" y="0" width="1177" height="824" key="CommitChangelistDialog2" timestamp="1603922403182">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="251" y="0" width="1177" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603738838910" />
+    <state x="251" y="0" width="1177" height="824" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603922403182" />
     <state x="1056" y="612" width="447" height="265" key="ComposerInitDialogKey" timestamp="1601225673460">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -440,9 +538,10 @@
     </state>
     <state x="615" y="222" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1601211440168" />
     <state x="3021" y="525" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@2560.360.1920.1040" timestamp="1600775085551" />
-    <state x="232" y="436" key="Vcs.Push.Dialog.v2" timestamp="1601217765588">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="139" y="257" key="Vcs.Push.Dialog.v2" timestamp="1603900604278">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="139" y="257" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603900604278" />
     <state x="232" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1601217765588" />
     <state x="493" y="48" width="538" height="537" key="run.anything.popup" timestamp="1601887133073">
       <screen x="0" y="0" width="1536" height="824" />
