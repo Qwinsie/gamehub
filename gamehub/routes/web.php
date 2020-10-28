@@ -13,22 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('', function () {
 
-    Route::get('', 'App\Http\Controllers\GameController@show')->name('game');
+    Route::get('', 'App\Http\Controllers\GameController@index')->name('gamehub.index');
 });
 
-Route::get('about-us', 'AboutUsController@index')->name('about.index');
 
 Route::prefix('gamehub')->group(function(){
 
-    Route::get('', 'App\Http\Controllers\GameController@index')->name('gamehub.index');
+Route::get('', 'App\Http\Controllers\GameController@index')->name('gamehub.index');
 
-    Route::name('game.')->group(function(){
+Route::name('game.')->group(function(){
         Route::get('create', 'App\Http\Controllers\GameController@create')->name('create');
         Route::post('store', 'App\Http\Controllers\GameController@store')->name('store');
         Route::get('{id}', 'App\Http\Controllers\GameController@show')->name('show');
     });
 });
+
+Route::get('about-us', 'AboutUsController@index')->name('about.index');
 
 //Auth::routes();
