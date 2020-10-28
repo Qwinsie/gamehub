@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,17 +14,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('', function () {
+Route::get('/test', function () {
 
-    Route::get('', 'App\Http\Controllers\GameController@index')->name('gamehub.index');
+    Route::get('gamehub', 'App\Http\Controllers\GameController@index')->name('gamehub.index');
 });
 
 
 Route::prefix('gamehub')->group(function(){
 
-Route::get('', 'App\Http\Controllers\GameController@index')->name('gamehub.index');
+    Route::get('', 'App\Http\Controllers\GameController@index')->name('gamehub.index');
 
-Route::name('game.')->group(function(){
+    Route::name('game.')->middleware('auth')->group(function(){
         Route::get('create', 'App\Http\Controllers\GameController@create')->name('create');
         Route::post('store', 'App\Http\Controllers\GameController@store')->name('store');
         Route::get('{id}', 'App\Http\Controllers\GameController@show')->name('show');
@@ -32,4 +33,7 @@ Route::name('game.')->group(function(){
 
 Route::get('about-us', 'AboutUsController@index')->name('about.index');
 
-//Auth::routes();
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
