@@ -2,7 +2,10 @@
 
 namespace App\Models;
 
+use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -37,15 +40,53 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read int|null $favourite_count
  * @property-read \Illuminate\Database\Eloquent\Collection|\App\Models\Preference[] $preference
  * @property-read int|null $preference_count
+ * @property string $name
+ * @property string $email
+ * @property string|null $email_verified_at
+ * @property string|null $remember_token
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereEmail($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereEmailVerifiedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereName($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|User whereRememberToken($value)
  */
-class User extends Model
+class User extends Authenticatable
 {
-    public $fillable = ['username','password','image','description'];
+    use HasFactory, Notifiable;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+
+    public $fillable = [
+        'name',
+        'email',
+        'password'
+    ];
+
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+    ];
 
     public static function where(string $string, $gameid)
     {
     }
-
     public function role()
     {
         return $this->belongsTo(Role::class);
@@ -62,5 +103,4 @@ class User extends Model
     {
         return $this->hasMany(Favourite::class);
     }
-    use HasFactory;
 }
