@@ -34,7 +34,7 @@ class GameController extends Controller
     {
         Game::create($this->validateGame());
 
-        return redirect('gamehub.index')->with('success', 'Game has been successfully saved to your list!');
+        return redirect('gamehub')->with('success', 'Game has been successfully saved to your list!');
     }
 
     public function update(Game $game)
@@ -47,6 +47,7 @@ class GameController extends Controller
     protected function validateGame()
     {
         return request()->validate([
+            'user_id' => 'required',
             'name' => 'required',
             'year' => 'required',
             'company' => 'required',
