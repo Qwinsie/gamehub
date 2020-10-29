@@ -35,7 +35,7 @@ use Illuminate\Database\Eloquent\Model;
 class Game extends Model
 {
 
-    public $fillable = ['name', 'year', 'company', 'image'];
+    public $fillable = ['user_id','name', 'year', 'company', 'image'];
 
     public function path()
     {
