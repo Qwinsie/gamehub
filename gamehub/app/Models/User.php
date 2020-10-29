@@ -55,6 +55,11 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
+    public function path()
+    {
+        return route('profile.show', $this);
+    }
+
     /**
      * The attributes that are mass assignable.
      *
@@ -86,9 +91,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public static function where(string $string, $gameid)
-    {
-    }
     public function role()
     {
         return $this->belongsTo(Role::class);
