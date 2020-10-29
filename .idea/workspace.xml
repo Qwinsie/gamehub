@@ -20,18 +20,13 @@
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:laravel" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:laravel" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:laravel/ui" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
@@ -60,15 +55,11 @@
       <change afterPath="$PROJECT_DIR$/gamehub/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gamehub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gamehub.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gamehub/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gamehub/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/database/migrations/2020_02_27_131431_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/migrations/2020_02_27_131431_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/database/migrations/2020_03_27_131920_create_games_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/database/migrations/2020_03_27_131920_create_games_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gamehub/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gamehub/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gamehub/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gamehub/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -464,7 +455,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="laravel/ui" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>

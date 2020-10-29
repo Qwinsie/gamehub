@@ -16,7 +16,7 @@ class CreateFavouritesTable extends Migration
         Schema::create('favourites', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->nullable();
-            $table->foreignId('game_id')->constrained('gamehub')->nullable();
+            $table->foreignId('game_id')->constrained('games')->nullable();
             $table->timestamps();
         });
     }

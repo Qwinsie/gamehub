@@ -13,25 +13,20 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/test', function () {
-
-    Route::get('gamehub', 'App\Http\Controllers\GameController@index')->name('gamehub.index');
-});
-
+Route::get('', [App\Http\Controllers\GameController::class, 'index'])->name('gamehub.index');
 
 Route::prefix('gamehub')->group(function(){
 
-    Route::get('', 'App\Http\Controllers\GameController@index')->name('gamehub.index');
+    Route::get('', [App\Http\Controllers\GameController::class, 'index'])->name('gamehub.index');
 
     Route::name('game.')->middleware('auth')->group(function(){
-        Route::get('create', 'App\Http\Controllers\GameController@create')->name('create');
-        Route::post('store', 'App\Http\Controllers\GameController@store')->name('store');
-        Route::get('{id}', 'App\Http\Controllers\GameController@show')->name('show');
+        Route::get('create', [App\Http\Controllers\GameController::class, 'create'])->name('create');
+        Route::post('store', [App\Http\Controllers\GameController::class, 'store'])->name('store');
+        Route::get('{id}', [App\Http\Controllers\GameController::class, 'show'])->name('show');
     });
 });
 
-Route::get('about-us', 'AboutUsController@index')->name('about.index');
+Route::get('about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('about.index');
 
 
 Auth::routes();
