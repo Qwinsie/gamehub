@@ -1,21 +1,8 @@
-@extends('layout.layout')
+@extends('layouts.layout')
+@extends('layouts.app')
 
 @section ('content')
     <div class="flex-center position-ref full-height">
-        @if (Route::has('login'))
-            <div class="top-right links">
-                @auth
-                    <a href="{{ url('/home') }}">Home</a>
-                @else
-                    <a href="{{ route('login') }}">Login</a>
-
-                    @if (Route::has('register'))
-                        <a href="{{ route('register') }}">Register</a>
-                    @endif
-                @endauth
-            </div>
-        @endif
-
         <div class="content">
             <div class="title m-b-md">
                 Add a game to your list!
@@ -27,6 +14,10 @@
             <div>
                 <form method="post" action="{{ route('game.store') }}">
                     @csrf
+                        <input type="hidden" class="form-control" value="{{Auth::user()->id}}" id="user_id" name="user_id"/>
+                        @if($errors->has('user_id'))
+                            <span class="alert-danger form-check-inline">{{$errors->first('user_id')}}</span>
+                        @endif
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" class="form-control" id="name" name="name"/>
