@@ -17,13 +17,17 @@ Route::get('', [App\Http\Controllers\GameController::class, 'index'])->name('gam
 
 Route::prefix('gamehub')->group(function(){
 
-    Route::get('', [App\Http\Controllers\GameController::class, 'index'])->name('gamehub.index');
+    Route::get('', [App\Http\Controllers\GameController::class, 'index'])->name('.index');
 
     Route::name('game.')->middleware('auth')->group(function(){
         Route::get('create', [App\Http\Controllers\GameController::class, 'create'])->name('create');
         Route::post('store', [App\Http\Controllers\GameController::class, 'store'])->name('store');
         Route::get('{id}', [App\Http\Controllers\GameController::class, 'show'])->name('show');
     });
+
+});
+Route::prefix('gamehub/profile')->name('profile.')->group(function(){
+    Route::get('{id}', [App\Http\Controllers\ProfileController::class, 'show'])->name('show');
 });
 
 Route::get('about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('about.index');
