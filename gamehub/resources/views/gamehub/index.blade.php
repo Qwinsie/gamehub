@@ -22,8 +22,8 @@
             </div>
 
             <div class="links">
-                <a href="{{route('about.index')}}">About Us</a>
                 <a href="{{route('game.create')}}">Create a new Game</a>
+                <a href="{{route('about.index')}}">About Us</a>
             </div>
             <div>
                     <table>
