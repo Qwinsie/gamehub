@@ -7,10 +7,6 @@
             <div class="title m-b-md">
                 About Us
             </div>
-
-            <div class="links">
-                <a href="{{route('gamehub.index')}}">Homepage</a>
-            </div>
             <div>
               <h2>What is GameHub?</h2>
                 <p>
