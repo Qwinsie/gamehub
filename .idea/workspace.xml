@@ -8,11 +8,6 @@
       </path>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:laravel" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
@@ -24,43 +19,22 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:laravel" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:laravel/ui" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9fa98f5-88d2-40bc-9eac-bf21f47e2f5d" name="Default Changelist" comment="Laravel ui and Vue are successfully installed">
-      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/js/components/ExampleComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/sass/app.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gamehub/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gamehub.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gamehub.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/app/Http/Controllers/AboutController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gamehub/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gamehub/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gamehub/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamehub/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/gamehub/public/mix-manifest.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +58,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feature" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -455,19 +429,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="laravel/ui" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -529,6 +491,14 @@
     </state>
     <state x="636" y="268" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1601894423970" />
     <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1601222652225" />
+    <state x="147" y="64" key="MergeDialog" timestamp="1603963480027">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="147" y="64" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1603963480027" />
+    <state x="407" y="173" key="MultipleFileMergeDialog" timestamp="1603963480044">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="407" y="173" key="MultipleFileMergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1603963480044" />
     <state x="393" y="406" key="RollbackChangesDialog" timestamp="1600780735465">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -538,10 +508,10 @@
     </state>
     <state x="615" y="222" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1601211440168" />
     <state x="3021" y="525" key="SettingsEditor/0.0.2560.1400/2560.360.1920.1040@2560.360.1920.1040" timestamp="1600775085551" />
-    <state x="139" y="257" key="Vcs.Push.Dialog.v2" timestamp="1603900604278">
+    <state x="139" y="257" key="Vcs.Push.Dialog.v2" timestamp="1603966608067">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="139" y="257" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603900604278" />
+    <state x="139" y="257" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603966608067" />
     <state x="232" y="436" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.360.1920.1040@0.0.2560.1400" timestamp="1601217765588" />
     <state x="493" y="48" width="538" height="537" key="run.anything.popup" timestamp="1601887133073">
       <screen x="0" y="0" width="1536" height="824" />

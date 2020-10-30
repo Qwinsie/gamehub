@@ -14,9 +14,17 @@
                         </div>
                     @endif
                         <p>
-                            Hallo {{ Auth::user()->name }}
+                            Hello {{ Auth::user()->name }}
                         </p>
                     {{ __('You are logged in!') }}
+                        <div>
+                            <a class="btn btn-primary" href="{{ route('profile.show', Auth::user()->id) }}">
+                                Your Profile
+                            </a>
+                            <a  class="btn btn-primary" href="{{route('gamehub.index')}}">
+                                Homepage
+                            </a>
+                        </div>
                 </div>
             </div>
         </div>
