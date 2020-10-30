@@ -6,15 +6,14 @@
         <div class="content">
             <div class="title m-b-md">
                 @if (Auth::check())
-                    Hi {{ Auth::user()->name }}
+                    Gamehub
                 @else
                     Welcome to GameHub
                 @endif
             </div>
 
-            <div class="links">
-                <a href="{{route('game.create')}}">Create a new Game</a>
-                <a href="{{route('about.index')}}">About Us</a>
+            <div>
+                <a class="btn btn-primary" href="{{route('game.create')}}">Add a new Game to the list</a>
             </div>
             <div>
                 <table>
