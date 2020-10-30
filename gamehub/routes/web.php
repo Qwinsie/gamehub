@@ -17,17 +17,24 @@ Route::get('', [App\Http\Controllers\GameController::class, 'index'])->name('gam
 
 Route::prefix('gamehub')->group(function(){
 
-    Route::get('', [App\Http\Controllers\GameController::class, 'index'])->name('.index');
+    Route::get('', [App\Http\Controllers\GameController::class, 'index'])->name('gamehub.index');
 
     Route::name('game.')->middleware('auth')->group(function(){
         Route::get('create', [App\Http\Controllers\GameController::class, 'create'])->name('create');
         Route::post('store', [App\Http\Controllers\GameController::class, 'store'])->name('store');
-        Route::get('{id}', [App\Http\Controllers\GameController::class, 'show'])->name('show');
+        Route::post('{game}/update', [App\Http\Controllers\GameController::class, 'update'])->name('update');
+        Route::get('{game}', [App\Http\Controllers\GameController::class, 'show'])->name('show');
+        Route::get('{game}/edit', [App\Http\Controllers\GameController::class, 'edit'])->name('edit');
+        Route::get('{game}/delete', [App\Http\Controllers\GameController::class, 'delete'])->name('delete');
+
     });
 
 });
 Route::prefix('gamehub/profile')->name('profile.')->group(function(){
+    Route::get('edit/{id}', [App\Http\Controllers\ProfileController::class, 'edit'])->middleware('auth')->name('edit');
+    Route::post('store', [App\Http\Controllers\ProfileController::class, 'store'])->middleware('auth')->name('store');
     Route::get('{id}', [App\Http\Controllers\ProfileController::class, 'show'])->name('show');
+
 });
 
 Route::get('about-us', [App\Http\Controllers\AboutController::class, 'index'])->name('about.index');
