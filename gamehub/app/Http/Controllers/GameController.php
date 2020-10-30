@@ -3,9 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Game;
-use Illuminate\Http\Request;
 use DB;
-use App\Models\User;
 
 class GameController extends Controller
 {
@@ -16,12 +14,8 @@ class GameController extends Controller
         return view('gamehub.index',compact('games'));
     }
 
-    public function show($id)
+    public function show(Game $game)
     {
-        $game = Game::where('id', $id)->firstOrFail();
-        if($game === null){
-            abort(404, "The game you are looking for does not exist yet");
-        }
         return view('gamehub.show',compact('game'));
     }
 
@@ -34,14 +28,19 @@ class GameController extends Controller
     {
         Game::create($this->validateGame());
 
-        return redirect('gamehub')->with('success', 'Game has been successfully saved to your list!');
+        return redirect(route('gamehub.index'))->with('success', 'Game has been successfully saved to your list!');
+    }
+
+    public function edit(Game $game)
+    {
+        return view('gamehub.edit', compact('game'));
     }
 
     public function update(Game $game)
     {
-        Game::update(request()->validate());
+        $game->update($this->validateGame());
 
-        return redirect($game->path());
+        return redirect(route('game.show', compact('game')));
     }
 
     protected function validateGame()
@@ -55,8 +54,10 @@ class GameController extends Controller
         ]);
     }
 
-    public function edit(Game $game)
+    public function delete(Game $game)
     {
-        return view('games.edit', compact('game'));
+        $game->delete();
+
+        return redirect(route('gamehub.index'))->with('success', 'Game has been successfully deleted from your list!');
     }
 }
