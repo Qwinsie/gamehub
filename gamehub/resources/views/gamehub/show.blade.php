@@ -7,10 +7,6 @@
             <div class="title m-b-md">
                 {{$game->name}}
             </div>
-
-            <div class="links">
-                <a href="{{route('gamehub.index')}}">Homepage</a>
-            </div>
             <div>
                 <table>
                     <tr>
@@ -19,7 +15,8 @@
                         <td>{{$game->year}}</td>
                         <td>{{$game->company}}</td>
                         <td>{{$game->user->name}}</td>
-                        <td><a href="edit/{{$game->id}}">Edit</a></td>
+                        <td><a href="{{ route('game.edit', $game->id)}}">Edit</a></td>
+                        <td><a href="{{ route('game.delete', $game->id)}}">Delete</a></td>
                     </tr>
                 </table>
             </div>
