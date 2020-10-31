@@ -15,10 +15,11 @@ class CreatePreferencesTable extends Migration
     {
         Schema::create('preferences', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained('users')->nullable();
-            $table->foreignId('game_id')->constrained('games')->nullable();
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
+            $table->foreignId('game_id')->constrained('games')->onDelete('cascade');
             $table->boolean('preference');
             $table->timestamps();
+            $table->unique(['user_id','game_id']);
         });
     }
 
