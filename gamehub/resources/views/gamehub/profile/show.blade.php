@@ -8,14 +8,15 @@
                 {{$profile->name."'s Profile"}}
             </div>
             <div>
-                <table>
-                    <tr>
-                        <td><img src="{{$profile->image}}" alt="Profile picture"></td>
-                        <td>{{$profile->name}}</td>
-                        <td>{{$profile->email}}</td>
-                        <td><a href="{{$profile->id}}/edit">Edit</a></td>
-                    </tr>
-                </table>
+                @if($profile->image)
+                    <img src="{{URL("/images/$profile->image")}}" alt="Profile picture" width="200" height="200">
+                @endif
+                    {{$profile->name}}
+                    {{$profile->email}}
+                    {{$profile->description}}
+                    @can('edit-profile', $profile)
+                    <a href="{{route('profile.edit', $profile->id)}}">Edit</a>
+                    @endcan
             </div>
 
             <div>
@@ -34,7 +35,7 @@
                     @foreach($games as $game)
                         @php /** @var App\Models\Game $game */ @endphp
                         <tr>
-                            <td><img src="{{$game->image}}" alt=""></td>
+                            <td><img src="{{URL("/images/games/$game->image")}}" alt="{{$game->name}}" width="100" height="100"></td>
                             <td>{{$game->name}}</td>
                             <td>{{$game->year}}</td>
                             <td>{{$game->company}}</td>
