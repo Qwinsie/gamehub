@@ -22,22 +22,40 @@ class ProfileController extends Controller
         return view('gamehub.profile.show', compact('profile'), compact('games'));
     }
 
-    public function edit()
+    public function edit(User $profile)
     {
-        return view('gamehub.profile.edit');
+        $this->authorize('edit-profile', $profile);
+        return view('gamehub.profile.edit', compact('profile'));
     }
 
-    public function store()
+    public function update(User $profile)
     {
-        request()->validate([
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        ]);
-        $imageName = time().'.'.request()->image->getClientOriginalExtension();
+        $this->authorize('edit-profile', $profile);
+        if(request()->image) {
+            request()->validate([
+                'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+            $imageName = time() . '.' . request()->image->getClientOriginalExtension();
 
-        request()->image->move(public_path('images'), $imageName);
+            request()->image->move(public_path('images'), $imageName);
 
-        return back()
-            ->with('success','You have successfully upload image.')
-            ->with('image',$imageName);
+            $profile->update([
+                'image' => $imageName,
+            ]);
+        }
+
+        if(request()->name){
+            $profile->update(request()->validate([
+                'name' => ['required','string', 'min:5','max:25'],
+            ]));
+        }
+
+        if(request()->description) {
+            $profile->update(request()->validate([
+                'description' => ['required','max:255'],
+            ]));
+        }
+        return redirect(route('profile.show', compact('profile')));
     }
+
 }
