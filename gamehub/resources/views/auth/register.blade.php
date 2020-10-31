@@ -76,6 +76,22 @@
 {{--                            </div>--}}
 {{--                        </div>--}}
 
+                        <input type="hidden"
+                               class="form-control"
+                               value=""
+                               id="image"
+                               name="image"/>
+                        @if($errors->has('image'))
+                            <span class="alert-danger form-check-inline">{{$errors->first('image')}}</span>
+                        @endif
+                        <input type="hidden"
+                               class="form-control"
+                               value=""
+                               id="description"
+                               name="description"/>
+                        @if($errors->has('description'))
+                            <span class="alert-danger form-check-inline">{{$errors->first('description')}}</span>
+                        @endif
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-primary">
