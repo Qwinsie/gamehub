@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
@@ -35,11 +36,17 @@ use Illuminate\Database\Eloquent\Model;
 class Game extends Model
 {
 
+    use Likable;
+
     public $fillable = ['user_id','name', 'year', 'company', 'image'];
 
     public function path()
     {
         return route('game.show', $this);
+    }
+    public function likes()
+    {
+        return $this->hasMany(Like::class);
     }
     public function user()
     {
