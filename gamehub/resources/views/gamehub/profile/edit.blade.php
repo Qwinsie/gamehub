@@ -5,43 +5,61 @@
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title m-b-md">
-                Edit your profile image
+                Edit: {{ $profile->name }}
             </div>
+
             <div class="container">
                 <div class="panel panel-primary">
-                    <div class="panel-heading"><h2>Laravel 5.7 image upload example - HDTuto.com</h2></div>
-                    <div class="panel-body">
-                        @if ($message = Session::get('success'))
-                            <div class="alert alert-success alert-block">
-                                <button type="button" class="close" data-dismiss="alert">×</button>
-                                <strong>{{ $message }}</strong>
+                    <div class="panel-heading"><h4>Fill in the fields</h4></div>
+                    <form action="{{ route('profile.update', $profile->id) }}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('name') }}</label>
+                            <div class="col-md-6">
+                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" autocomplete="name">
+                                @if($errors->has('name'))
+                                    <span class="alert-danger form-check-inline">{{$errors->first('name')}}</span>
+                                @endif
                             </div>
-                            <img src="images/{{ Session::get('image') }}">
-                        @endif
-                        @if (count($errors) > 0)
-                            <div class="alert alert-danger">
-                                <strong>Whoops!</strong> There were some problems with your input.
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
+                        </div>
+
+
+                        <div class="form-group row">
+                            <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('description') }}</label>
+                            <div class="col-md-6">
+                                <textarea id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" autocomplete="description">{{ old('description') }}</textarea>
+                                @if($errors->has('description'))
+                                    <span class="alert-danger form-check-inline">{{$errors->first('description')}}</span>
+                                @endif
                             </div>
-                        @endif
-                        <form action="{{ route('profile.store') }}" method="POST" enctype="multipart/form-data">
-                            @csrf
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="file" name="image" class="form-control">
+                        </div>
+
+
+
+                        <div class="panel-body">
+                            @if ($message = Session::get('success'))
+                                <div class="alert alert-success alert-block">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <strong>{{ $message }}</strong>
                                 </div>
-                                <div class="col-md-6">
-                                    <button type="submit" class="btn btn-success">Upload</button>
-                                </div>
+                            @endif
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-6">
+                                <input type="file" name="image" class="">
+                                @if($errors->has('image'))
+                                    <span class="alert-danger form-check-inline">{{$errors->first('image')}}</span>
+                                @endif
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="form-group row">
+                            <button type="submit" class="btn-primary btn-block">Save Profile</button>
+                        </div>
+                    </form>
                 </div>
             </div>
+
+
         </div>
     </div>
 @endsection
