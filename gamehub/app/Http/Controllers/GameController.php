@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Models\Game;
 use DB;
+use Illuminate\Support\Facades\Auth;
 
 class GameController extends Controller
 {
     public function index()
     {
-        $games = Game::orderBy('created_at','desc')->get();
-
-        return view('gamehub.index',compact('games'));
+        $games = Game::orderBy('created_at','desc')->withLikes()->get();
+        return view('gamehub.index',compact('games'), );
     }
 
     public function show(Game $game)
@@ -26,18 +26,56 @@ class GameController extends Controller
 
     public function store()
     {
-        Game::create($this->validateGame());
+        $name = Game::where('name', request()->get('name'))->first();
+        if ($name) {
+            return redirect(route('gamehub.index'))->with('fails', 'The game you tried to acces does already exsist');
+        } else {
 
-        return redirect(route('gamehub.index'))->with('success', 'Game has been successfully saved to your list!');
+            request()->validate([
+                'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+            $imageName = time() . '.' . request()->image->getClientOriginalExtension();
+
+            request()->image->move(public_path('images/games'), $imageName);
+
+            $this->validateGame();
+
+            Game::create([
+                'user_id' => request('user_id'),
+                'name' => request('name'),
+                'year' => request('year'),
+                'company' => request('company'),
+                'image' => $imageName,
+            ]);
+
+
+            return redirect(route('gamehub.index'))->with('success', 'Game has been successfully saved to your list!');
+        }
     }
 
     public function edit(Game $game)
     {
+        $this->authorize('edit-game', $game);
         return view('gamehub.edit', compact('game'));
     }
 
     public function update(Game $game)
     {
+        $this->authorize('edit-game', $game);
+        if(request()->image) {
+
+            request()->validate([
+                'image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ]);
+            $imageName = time() . '.' . request()->image->getClientOriginalExtension();
+
+            request()->image->move(public_path('images/games'), $imageName);
+
+            $game->update([
+                'image' => $imageName,
+            ]);
+        }
+
         $game->update($this->validateGame());
 
         return redirect(route('game.show', compact('game')));
@@ -47,17 +85,32 @@ class GameController extends Controller
     {
         return request()->validate([
             'user_id' => 'required',
-            'name' => 'required',
-            'year' => 'required',
+            'name' => ['required','string','max:50'],
+            'year' => ['required','string','max:4'],
             'company' => 'required',
-            'image' => 'required'
         ]);
     }
 
     public function delete(Game $game)
     {
+        $this->authorize('edit-game', $game);
+
         $game->delete();
 
         return redirect(route('gamehub.index'))->with('success', 'Game has been successfully deleted from your list!');
+    }
+
+    public function storeLike(Game $game)
+    {
+        $game->like($game->user->name);
+
+        return back();
+    }
+
+    public function  destroy(Game $game)
+    {
+        $game->dislike($game->user->name);
+
+        return back();
     }
 }
