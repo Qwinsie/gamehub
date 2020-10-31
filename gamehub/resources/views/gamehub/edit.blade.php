@@ -8,9 +8,9 @@
                 Edit: {{ $game->name }}
             </div>
             <div>
-                <form method="post" action="{{ route('game.update', $game->id)}}">
+                <form method="post" action="{{ route('game.update', $game->id)}}" enctype="multipart/form-data">
                     @csrf
-                        <input type="hidden" class="form-control" value="{{Auth::user()->id}}" id="user_id" name="user_id"/>
+                        <input type="hidden" class="form-control" value="{{$game->user->id}}" id="user_id" name="user_id"/>
                         @if($errors->has('user_id'))
                             <span class="alert-danger form-check-inline">{{$errors->first('user_id')}}</span>
                         @endif
@@ -36,8 +36,8 @@
                         @endif
                     </div>
                     <div class="form-group">
-                        <label for="image">Image URL:</label>
-                        <input type="text" class="form-control" id="image" name="image" value="{{ $game->image }}"/>
+                        <label for="image">Image</label>
+                        <input type="file" class="" name="image" value="{{ $game->image }}"/>
                     </div>
                     <button type="submit" class="btn-primary btn-block">Save Game</button>
                 </form>
