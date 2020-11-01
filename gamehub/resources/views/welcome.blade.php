@@ -20,11 +20,6 @@
             <div class="title m-b-md">
                 GameHub
             </div>
-
-            <div class="links">
-                <a href="{{route('aboutus')}}">About us</a>
-            </div>
-
         </div>
     </div>
 @endsection
