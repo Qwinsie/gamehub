@@ -8,7 +8,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Gamehub
-{{--        {{ config('app.name', 'Gamehub') }}--}}
     </title>
 
     <!-- Scripts -->
@@ -27,7 +26,6 @@
             <div class="container">
                 <a class="navbar-brand" href="{{ route('gamehub.index') }}">
                     Gamehub
-{{--                    {{ config('app.name', 'Gamehub') }}--}}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -35,11 +33,14 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+
                     <ul class="navbar-nav mr-auto">
-
+                        <a class="navbar-brand" href="{{ route('about.index') }}">
+                            About Us
+                        </a>
                     </ul>
-
                     <!-- Right Side Of Navbar -->
+
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         @guest
