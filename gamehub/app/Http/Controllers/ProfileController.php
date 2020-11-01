@@ -46,7 +46,7 @@ class ProfileController extends Controller
 
         if(request()->name){
             $profile->update(request()->validate([
-                'name' => ['required','string', 'min:5','max:25'],
+                'name' => ['required','string', 'min:4','max:25'],
             ]));
         }
 
