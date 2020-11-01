@@ -46,16 +46,13 @@ class Game extends Model
     }
     public function likes()
     {
-        return $this->hasMany(Like::class);
+        return $this->hasMany(Preference::class);
     }
     public function user()
     {
         return $this->belongsTo(User::class);
     }
-    public function preference()
-    {
-        return $this->belongsTo(Preference::class);
-    }
+
     public function favourite()
     {
         return $this->belongsTo(Favourite::class);
