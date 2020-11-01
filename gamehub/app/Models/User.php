@@ -101,6 +101,10 @@ class User extends Authenticatable
     {
         return $this->hasMany(Game::class);
     }
+    public function likes()
+    {
+        return $this->hasMany(Preference::class);
+    }
     public function preference()
     {
         return $this->hasMany(Preference::class);
