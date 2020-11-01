@@ -5,11 +5,14 @@
     <div class="flex-center position-ref full-height">
         <div class="content">
             <div class="title m-b-md">
-                Add a game to your list!
+                Add a game!
+                <a class="btn btn-primary" href="{{ route('gamehub.index') }}">Back</a>
             </div>
             <div class="container">
                 <div class="panel panel-primary">
-                    <div class="panel-heading"><h6>Fill in the fields</h6></div>
+                    <div class="panel-heading">
+                        <h6>Fill in the fields. * = are required fields</h6>
+                    </div>
                 <form method="post" action="{{ route('game.store') }}" enctype="multipart/form-data">
                     @csrf
                         <input type="hidden"
@@ -21,7 +24,7 @@
                             <span class="alert-danger form-check-inline">{{$errors->first('user_id')}}</span>
                         @endif
                     <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('name') }}</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('name *') }}</label>
                         <div class="col-md-6">
                             <input type="text"
                                     class="form-control"
@@ -35,7 +38,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="year" class="col-md-4 col-form-label text-md-right">{{ __('year') }}</label>
+                        <label for="year" class="col-md-4 col-form-label text-md-right">{{ __('year *') }}</label>
                         <div class="col-md-6">
                             <input type="text"
                                    class="form-control"
@@ -49,7 +52,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="company" class="col-md-4 col-form-label text-md-right">{{ __('company') }}</label>
+                        <label for="company" class="col-md-4 col-form-label text-md-right">{{ __('company *') }}</label>
                         <div class="col-md-6">
                             <input type="text"
                                    class="form-control"
@@ -62,7 +65,7 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('Image') }}</label>
+                        <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('image of game *') }}</label>
                         <div class="col-md-6">
                             <input type="file" class="" name="image"/>
                             @if($errors->has('image'))
