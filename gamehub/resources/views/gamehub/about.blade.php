@@ -12,6 +12,9 @@
                 <p>
                     GameHub is an online platform where you can list your owned games and view games of others.
                 </p>
+                <p>
+                    Created by: Quincy van der Sluis
+                </p>
             </div>
         </div>
     </div>
