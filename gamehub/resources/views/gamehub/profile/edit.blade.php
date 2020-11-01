@@ -16,7 +16,7 @@
                         <div class="form-group row">
                             <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('name') }}</label>
                             <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" autocomplete="name">
+                                <input id="name" placeholder="{{$profile->name}}" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name')  }}" autocomplete="name">
                                 @if($errors->has('name'))
                                     <span class="alert-danger form-check-inline">{{$errors->first('name')}}</span>
                                 @endif
@@ -27,7 +27,7 @@
                         <div class="form-group row">
                             <label for="description" class="col-md-4 col-form-label text-md-right">{{ __('description') }}</label>
                             <div class="col-md-6">
-                                <textarea id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" autocomplete="description">{{ old('description') }}</textarea>
+                                <textarea id="description" placeholder="{{$profile->description ?: 'This is my Bio...'}}" type="text" class="form-control @error('description') is-invalid @enderror" name="description" autocomplete="description">{{ old('description') }}</textarea>
                                 @if($errors->has('description'))
                                     <span class="alert-danger form-check-inline">{{$errors->first('description')}}</span>
                                 @endif
@@ -45,6 +45,7 @@
                             @endif
                         </div>
                         <div class="form-group row">
+                            <label for="image" class="col-md-4 col-form-label text-md-right">{{ __('profile picture') }}</label>
                             <div class="col-md-6">
                                 <input type="file" name="image" class="">
                                 @if($errors->has('image'))
