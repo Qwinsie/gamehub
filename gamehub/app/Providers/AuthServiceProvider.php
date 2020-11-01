@@ -33,5 +33,11 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('edit-game', function (User $user, $game) {
             return $game->user->is($user);
         });
+
+        Gate::before(function (User $user) {
+            if ($user->id === 1 ) {
+                return true;
+            }
+        });
     }
 }
