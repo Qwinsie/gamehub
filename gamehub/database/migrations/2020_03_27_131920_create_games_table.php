@@ -19,7 +19,7 @@ class CreateGamesTable extends Migration
             $table->string('image')->nullable();
             $table->integer('year');
             $table->string('company');
-            $table->foreignId('user_id')->constrained('users')->nullable();
+            $table->foreignId('user_id')->constrained('users')->onDelete('cascade')->nullable();
             $table->timestamps();
         });
     }
