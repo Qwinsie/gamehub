@@ -4,7 +4,11 @@
 namespace App\Models;
 
 
-class Like
+use Illuminate\Database\Eloquent\Model;
+
+class Like extends Model
 {
     protected $guarded = [];
+
+
 }
